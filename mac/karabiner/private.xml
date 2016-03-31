@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<!--主要修改了左右下的方向键-->
+		<name>My RK Setting</name>
+		<identifier>my_rk_setting</identifier>
+		<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::CURSOR_LEFT</autogen>
+		<autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+		<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CURSOR_DOWN</autogen>
+		<autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::CURSOR_UP</autogen>
+	</item>
+
+	<!-- 以下为快捷启动改建 -->
+	<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_FIREFOX</name>
+    <url type="file">/Applications/Firefox.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_CHROME</name>
+    <url type="file">/Users/guoqw/Applications/Google Chrome.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_SUBLIMETEXT</name>
+    <url type="file">/Applications/Sublime Text.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_FOXMAIL</name>
+    <url type="file">/Applications/Foxmail.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_SQQUEL</name>
+    <url type="file">/Applications/Sequel Pro.app</url>
+  </vkopenurldef>
+
+	<vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_QQ</name>
+    <url type="file">/Applications/QQ.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_IDEA</name>
+    <url type="file">/Applications/IntelliJ IDEA.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_NeteaseMusic</name>
+    <url type="file">/Applications/NeteaseMusic.app</url>
+  </vkopenurldef>
+
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+      	<autogen>
+          __KeyDownUpToKey__
+          KeyCode::X,
+          KeyCode::VK_OPEN_URL_APP_FIREFOX,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::C,
+          KeyCode::VK_OPEN_URL_APP_CHROME,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::S,
+          KeyCode::VK_OPEN_URL_APP_SUBLIMETEXT,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::M,
+          KeyCode::VK_OPEN_URL_APP_FOXMAIL,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::D,
+          KeyCode::VK_OPEN_URL_APP_SQQUEL,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::Q,
+          KeyCode::VK_OPEN_URL_APP_QQ,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::I,
+          KeyCode::VK_OPEN_URL_APP_IDEA,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::N,
+          KeyCode::VK_OPEN_URL_APP_NeteaseMusic,
+        </autogen>
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+</root>
