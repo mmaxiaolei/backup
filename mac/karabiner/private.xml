@@ -56,6 +56,11 @@
     <url type="file">/Applications/VMware Fusion.app</url>
   </vkopenurldef>
 
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_youdao</name>
+    <url type="file">/Applications/有道词典.app</url>
+  </vkopenurldef>
+
   <replacementdef>
     <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
     <replacementvalue>
@@ -113,6 +118,13 @@
           KeyCode::V,
           KeyCode::VK_OPEN_URL_APP_VMware,
         </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::Y,
+          KeyCode::VK_OPEN_URL_APP_youdao,
+        </autogen>
+        
       ]]>
     </replacementvalue>
   </replacementdef>
