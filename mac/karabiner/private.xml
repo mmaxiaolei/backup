@@ -1,71 +1,97 @@
 <?xml version="1.0"?>
 <root>
-	<item>
-		<!--主要修改了左右下的方向键-->
-		<name>My RK Setting</name>
-		<identifier>my_rk_setting</identifier>
-		<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::CURSOR_LEFT</autogen>
-		<autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
-		<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CURSOR_DOWN</autogen>
-		<autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::CURSOR_UP</autogen>
-	</item>
+    <item>
 
-	<!-- 以下为快捷启动改建 -->
-	<vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_FIREFOX</name>
-    <url type="file">/Applications/Firefox.app</url>
-  </vkopenurldef>
+        <name>My RK Setting</name>
+        <identifier>my_rk_setting</identifier>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_CHROME</name>
-    <url type="file">/Users/guoqw/Applications/Google Chrome.app</url>
-  </vkopenurldef>
+        <!--主要修改了左右下的方向键-->
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+        <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::CURSOR_UP</autogen>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_SUBLIMETEXT</name>
-    <url type="file">/Applications/Sublime Text.app</url>
-  </vkopenurldef>
+        <!-- 针对idea的一些快捷键映射。 -->
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_FOXMAIL</name>
-    <url type="file">/Applications/Foxmail.app</url>
-  </vkopenurldef>
+        <!-- 运行：i+r -> control+shift+F10 -->
+        <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::R, KeyCode::I,
+            KeyCode::F10, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
+        </autogen>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_SQQUEL</name>
-    <url type="file">/Applications/Sequel Pro.app</url>
-  </vkopenurldef>
+        <!-- debug运行：i+d -> control+shift+F9 -->
+        <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::D, KeyCode::I,
+            KeyCode::F9, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
+        </autogen>
 
-	<vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_QQ</name>
-    <url type="file">/Applications/QQ.app</url>
-  </vkopenurldef>
+        <!-- 显示structure：i+s -> COMMAND+F12 -->
+        <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::S, KeyCode::I,
+            KeyCode::F12, ModifierFlag::COMMAND_L,
+        </autogen>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_IDEA</name>
-    <url type="file">/Applications/IntelliJ IDEA.app</url>
-  </vkopenurldef>
+    </item>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_NeteaseMusic</name>
-    <url type="file">/Applications/NeteaseMusic.app</url>
-  </vkopenurldef>
+    <!-- 以下为快捷启动改建 -->
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_FIREFOX</name>
+        <url type="file">/Applications/Firefox.app</url>
+    </vkopenurldef>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_VMware</name>
-    <url type="file">/Applications/VMware Fusion.app</url>
-  </vkopenurldef>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_CHROME</name>
+        <url type="file">/Users/guoqw/Applications/Google Chrome.app</url>
+    </vkopenurldef>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_youdao</name>
-    <url type="file">/Applications/有道词典.app</url>
-  </vkopenurldef>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_SUBLIMETEXT</name>
+        <url type="file">/Applications/Sublime Text.app</url>
+    </vkopenurldef>
 
-  <replacementdef>
-    <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
-    <replacementvalue>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_FOXMAIL</name>
+        <url type="file">/Applications/Foxmail.app</url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_SQQUEL</name>
+        <url type="file">/Applications/Sequel Pro.app</url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_QQ</name>
+        <url type="file">/Applications/QQ.app</url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_IDEA</name>
+        <url type="file">/Applications/IntelliJ IDEA.app</url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_NeteaseMusic</name>
+        <url type="file">/Applications/NeteaseMusic.app</url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_VMware</name>
+        <url type="file">/Applications/VMware Fusion.app</url>
+    </vkopenurldef>
+
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_youdao</name>
+        <url type="file">/Applications/有道词典.app</url>
+    </vkopenurldef>
+
+    <replacementdef>
+        <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
+        <replacementvalue>
       <![CDATA[
-      	<autogen>
+        <autogen>
           __KeyDownUpToKey__
           KeyCode::X,
           KeyCode::VK_OPEN_URL_APP_FIREFOX,
@@ -126,7 +152,7 @@
         </autogen>
         
       ]]>
-    </replacementvalue>
-  </replacementdef>
+        </replacementvalue>
+    </replacementdef>
 
 </root>
