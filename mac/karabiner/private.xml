@@ -34,6 +34,13 @@
             KeyCode::F12, ModifierFlag::COMMAND_L,
         </autogen>
 
+        <!-- 重构：修改名字：i+n -> shift+F6 -->
+        <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::N, KeyCode::I,
+            KeyCode::F6, ModifierFlag::SHIFT_L,
+        </autogen>
+
     </item>
 
     <!-- 以下为快捷启动改建 -->
