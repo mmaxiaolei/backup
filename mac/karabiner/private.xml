@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 <root>
+
+    <appdef>
+        <appname>IDEA</appname>
+        <equal>com.jetbrains.intellij</equal>
+    </appdef>
+
     <item>
 
         <name>My RK Setting</name>
@@ -11,8 +17,15 @@
         <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CURSOR_DOWN</autogen>
         <autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::CURSOR_UP</autogen>
 
-        <!-- 针对idea的一些快捷键映射。 -->
+    </item>
 
+    <item>
+
+        <name>My IDEA Setting</name>
+        <identifier>my_idea_setting</identifier>
+
+        <!-- 针对idea的一些快捷键映射。 -->
+        <only>IDEA</only>
         <!-- 运行：i+r -> control+shift+F10 -->
         <autogen>
             __SimultaneousKeyPresses__
