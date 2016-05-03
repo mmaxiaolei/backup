@@ -71,6 +71,11 @@
         <name>KeyCode::VK_OPEN_URL_APP_SUBLIMETEXT</name>
         <url type="file">/Applications/Sublime Text.app</url>
     </vkopenurldef>
+    
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_VSCODE</name>
+        <url type="file">/Applications/Visual Studio Code.app</url>
+    </vkopenurldef>
 
     <vkopenurldef>
         <name>KeyCode::VK_OPEN_URL_APP_FOXMAIL</name>
@@ -98,11 +103,6 @@
     </vkopenurldef>
 
     <vkopenurldef>
-        <name>KeyCode::VK_OPEN_URL_APP_VMware</name>
-        <url type="file">/Applications/VMware Fusion.app</url>
-    </vkopenurldef>
-
-    <vkopenurldef>
         <name>KeyCode::VK_OPEN_URL_APP_youdao</name>
         <url type="file">/Applications/有道词典.app</url>
     </vkopenurldef>
@@ -127,6 +127,12 @@
           __KeyDownUpToKey__
           KeyCode::S,
           KeyCode::VK_OPEN_URL_APP_SUBLIMETEXT,
+        </autogen>
+        
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::V,
+          KeyCode::VK_OPEN_URL_APP_VSCODE,
         </autogen>
 
         <autogen>
@@ -157,12 +163,6 @@
           __KeyDownUpToKey__
           KeyCode::N,
           KeyCode::VK_OPEN_URL_APP_NeteaseMusic,
-        </autogen>
-
-        <autogen>
-          __KeyDownUpToKey__
-          KeyCode::V,
-          KeyCode::VK_OPEN_URL_APP_VMware,
         </autogen>
 
         <autogen>
