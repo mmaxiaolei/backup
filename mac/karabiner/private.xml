@@ -26,31 +26,31 @@
 
         <!-- 针对idea的一些快捷键映射。 -->
         <only>IDEA</only>
-        <!-- 运行：i+r -> control+shift+F10 -->
+        <!-- 运行：]+r -> control+shift+F10 -->
         <autogen>
             __SimultaneousKeyPresses__
-            KeyCode::R, KeyCode::I,
+            KeyCode::R, KeyCode::BRACKET_RIGHT,
             KeyCode::F10, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
         </autogen>
 
-        <!-- debug运行：i+d -> control+shift+F9 -->
+        <!-- debug运行：]+d -> control+shift+F9 -->
         <autogen>
             __SimultaneousKeyPresses__
-            KeyCode::D, KeyCode::I,
+            KeyCode::D, KeyCode::BRACKET_RIGHT,
             KeyCode::F9, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
         </autogen>
 
-        <!-- 显示structure：i+s -> COMMAND+F12 -->
+        <!-- 显示structure：]+s -> COMMAND+F12 -->
         <autogen>
             __SimultaneousKeyPresses__
-            KeyCode::S, KeyCode::I,
+            KeyCode::S, KeyCode::BRACKET_RIGHT,
             KeyCode::F12, ModifierFlag::COMMAND_L,
         </autogen>
 
-        <!-- 重构：修改名字：i+n -> shift+F6 -->
+        <!-- 重构：修改名字：]+n -> shift+F6 -->
         <autogen>
             __SimultaneousKeyPresses__
-            KeyCode::N, KeyCode::I,
+            KeyCode::N, KeyCode::BRACKET_RIGHT,
             KeyCode::F6, ModifierFlag::SHIFT_L,
         </autogen>
 
@@ -111,6 +111,13 @@
         <name>KeyCode::VK_OPEN_URL_APP_Mou</name>
         <url type="file">/Applications/Mou.app</url>
     </vkopenurldef>
+
+    <!-- ===========将启动快捷前置键从O改为[================================================= -->
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_KEY</replacementname>
+    <!-- You can change the start key. -->
+    <replacementvalue>KeyCode::BRACKET_LEFT</replacementvalue>
+  </replacementdef>
 
     <replacementdef>
         <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
