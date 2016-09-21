@@ -119,6 +119,11 @@
         <url type="file">/Applications/Mou.app</url>
     </vkopenurldef>
 
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_DataGrid</name>
+        <url type="file">/Applications/DataGrip.app</url>
+    </vkopenurldef>
+
     <!-- ===========将启动快捷前置键从O改为[================================================= -->
   <replacementdef>
     <replacementname>LAUNCHER_MODE_V2_KEY</replacementname>
@@ -163,7 +168,7 @@
         <autogen>
           __KeyDownUpToKey__
           KeyCode::D,
-          KeyCode::VK_OPEN_URL_APP_SQQUEL,
+          KeyCode::VK_OPEN_URL_APP_DataGrid,
         </autogen>
 
         <autogen>
