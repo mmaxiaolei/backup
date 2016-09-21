@@ -54,6 +54,13 @@
             KeyCode::F6, ModifierFlag::SHIFT_L,
         </autogen>
 
+        <!--查看uml：]+u -> alt+COMMAND+u -->
+         <autogen>
+            __SimultaneousKeyPresses__
+            KeyCode::U, KeyCode::BRACKET_RIGHT,
+            KeyCode::U, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L,
+        </autogen>
+
     </item>
 
     <!-- 以下为快捷启动改建 -->
